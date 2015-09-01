@@ -1,0 +1,113 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+*, *:after, *:before
+{
+	border: 0;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body, html
+{
+	background: #EEE;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	min-height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+footer, header
+{
+	background: #292623;
+	color: #EEE;
+	padding: .5em;
+}
+
+footer
+{
+	background: yellow;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+img { max-width: 100%; }
+
+#frontend { margin-bottom: 4.5em; }
+
+#frontend figure
+{
+	background: white;
+	font-size: 1.75em;
+	margin: .5em auto;
+	padding: 1em;
+	width: 90%;
+}
+
+.regresar { color: #EEE; }
+
+.regresar:hover { color: #EC673A; }
+
+/* 
+Breakpoints para Responsive Design Mobile First:
+-320px 321px 481px 601px 769px 1025px 1201px
+*/
+@media screen and (min-width: 321px){
+	footer { background: magenta; }
+}
+
+@media screen and (min-width: 481px){
+	footer { background: cyan; }
+	
+	#frontend { margin-bottom: 3em; }
+
+	#frontend figure
+	{
+		display: inline-block;
+		margin: .25em;
+		vertical-align: top;
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 601px){
+	footer { background: blue; }
+}
+
+@media screen and (min-width: 769px){
+	footer { background: green; }
+
+	#frontend figure
+	{
+		font-size: 1.25em;
+		margin: 1em;
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1025px){
+	footer { background: red; }
+
+	#frontend figure
+	{
+		font-size: 1.75em;
+		margin: 1em .25em;
+		width: 20%;
+	}
+}
+
+@media screen and (min-width: 1201px){
+	footer { background: #292623; }
+
+	#frontend figure
+	{
+		font-size: 2em;
+		margin: 1em .5em;
+	}
+}
